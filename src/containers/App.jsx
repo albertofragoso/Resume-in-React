@@ -1,6 +1,6 @@
 import React from 'react'
 import Sidebar from '../components/Sidebar'
-import Social from '../components/Sidebar'
+import About from '../components/About'
 import Info from '../components/Info'
 import Education from '../components/Education'
 import Experience from '../components/Education'
@@ -11,7 +11,7 @@ const App = () => {
   return(
     <Main>
       <Sidebar>
-        <Social />
+        <About />
       </Sidebar>
       <Info>
         <Education />
