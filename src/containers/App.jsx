@@ -1,4 +1,5 @@
 import React from 'react'
+import Main from '../components/Main'
 import Sidebar from '../components/Sidebar'
 import About from '../components/About'
 import Info from '../components/Info'
