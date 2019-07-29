@@ -5,7 +5,7 @@ const Skills = props => (
     <div className="Skills-container">
       {
         props.data.map((item, index) => (
-          <div className ="Skills-item" key={index}>
+          <div className ="Skills-item" key={`Skl-${index}`}>
             <h5>{item.name}</h5>
             <div className="Skills-line">
               <span>{item.percentage}</span>    

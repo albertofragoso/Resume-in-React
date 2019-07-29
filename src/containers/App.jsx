@@ -23,6 +23,7 @@ const App = () => {
           profession={data.profession}
           bio={data.bio}
           address={data.address}
+          social={data.social}
         />
       </Sidebar>
       <Info>
