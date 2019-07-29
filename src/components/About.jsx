@@ -6,6 +6,7 @@ const AboutStyle = styled.div`
   background-image: linear-gradient(to top,rgb(22, 135, 237) 0%,rgb(20, 55, 90) 100%);
   color: #fff!important;
   text-align: center;
+  padding: 0 0 2em 0;
 `
 
 const AboutAvatar = styled.div`
