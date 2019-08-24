@@ -1,4 +1,5 @@
 import React from 'react'
+import { createGlobalStyle } from 'styled-components'
 import Main from '../components/Main'
 import Sidebar from '../components/Sidebar'
 import About from '../components/About'
@@ -10,12 +11,22 @@ import Skills from '../components/Skills'
 import Projects from '../components/Projects'
 import useGetData from '../hooks/useGetData'
 
+const GlobalStyles = createGlobalStyle`
+  body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+`
+
 const App = () => {
 
   const [data] = useGetData()
   
   return !data ? <h1>Loading... </h1> : (
     <Main>
+      <GlobalStyles />
       <Sidebar>
         <About 
           avatar={data.avatar}

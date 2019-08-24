@@ -3,7 +3,7 @@ import styled, { keyframes } from 'styled-components'
 
 const SkillsContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat()(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   grid-row-gap: 0.5em;
 `
