@@ -10,8 +10,8 @@ const Certifications = props => (
       {
         props.data.map((item, index) => (
           <div className="Certifications-item" key={`Cer-${index}`}>
-            <H3Styled>{item.institution} - {item.name}
-              <span>{item.date}</span>
+            <H3Styled>{item.institution} - {item.name} |
+              <small> {item.date}</small>
             </H3Styled>
             <PStyled name={item.description} />
           </div>

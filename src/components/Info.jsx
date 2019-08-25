@@ -1,11 +1,16 @@
 import React from 'react'
+import styled from 'styled-components'
+
+const InfoContainer = styled.div`
+  padding: 1em;
+`
 
 const Info = ({ children }) => (
-  <div className="Info">
+  <InfoContainer>
     <div className="Info-container">
       { children }
     </div>
-  </div>
+  </InfoContainer>
 )
 
 export default Info
