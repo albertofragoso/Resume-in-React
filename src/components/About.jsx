@@ -15,7 +15,7 @@ const AboutAvatar = styled.div`
 
 const AboutImg = styled.img`
   border-radius: 100%;
-  width: 200px;
+  width: 175px;
   height: 150px;
   border: 2px solid #00aced;
   margin: 0 auto;

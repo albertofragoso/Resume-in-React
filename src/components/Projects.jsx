@@ -4,34 +4,35 @@ import H2Styled from '../styled/H2Styled'
 import H3Styled from '../styled/H3Styled'
 import PStyled from '../styled/PStyled'
 
-const ProjectsFigure = styled.figure`
-  width: 400px;
-  overflow: hidden;
+const ProjectsContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  grid-row-gap: 0.5em;
 `
 
 const ProjectImg = styled.img`
+  margin: 10px 0;
+  height: auto;  
   width: 100%;
-  height: 100%;
 `
 
 const Projects = props => (
   <div className="Projects">
     <H2Styled name="👨🏻‍💻 Proyectos" />
-    <div className="Projects-container">
+    <ProjectsContainer>
       {
         props.data.map((item, index) => (
-          <div className="Projects-item" key={`Proj-${index}`}>
+          <div className="Projects-item" key={`Proj-${index}`} >
             <a href={item.url} target="_blank">
-              <ProjectsFigure>
-                <ProjectImg src={item.image} alt={item.name}/>
-              </ProjectsFigure>
+              <ProjectImg src={item.image} alt={item.name}/>
             </a>
-              <H3Styled>{item.name}</H3Styled>
-              <PStyled name={item.description} />
+            <H3Styled>{item.name}</H3Styled>
+            <PStyled name={item.description} />
           </div>
         ))
       }
-    </div>
+    </ProjectsContainer>
   </div>
 )
 
