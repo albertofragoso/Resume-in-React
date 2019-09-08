@@ -9,7 +9,10 @@ import Experience from '../components/Experience'
 import Certifications from '../components/Certifications'
 import Skills from '../components/Skills'
 import Projects from '../components/Projects'
+import Loader from '../components/Loader'
 import useGetData from '../hooks/useGetData'
+
+import '../global.css'
 
 const GlobalStyles = createGlobalStyle`
   body {
@@ -24,7 +27,7 @@ const App = () => {
 
   const [data] = useGetData()
   
-  return !data ? <h1>Loading... </h1> : (
+  return !data ? <Loader /> : (
     <Main>
       <GlobalStyles />
       <Sidebar>

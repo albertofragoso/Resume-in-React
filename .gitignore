@@ -60,3 +60,6 @@ typings/
 # next.js build output
 .next
 dist/
+.firebase
+.firebaserc
+firebase.json
